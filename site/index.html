@@ -58,7 +58,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
   
     
     
@@ -190,6 +190,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#arbol-de-la-web" class="md-nav__link">
+    Árbol de la web
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#endpoints" class="md-nav__link">
     Endpoints
   </a>
@@ -279,6 +286,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#arbol-de-la-web" class="md-nav__link">
+    Árbol de la web
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#endpoints" class="md-nav__link">
     Endpoints
   </a>
@@ -315,8 +329,15 @@
   <h1>Home</h1>
 
 <h2 id="deepsua-api-documentacion">DEEPSUA API - Documentación<a class="headerlink" href="#deepsua-api-documentacion" title="Permanent link">&para;</a></h2>
-<p>API de la Delegación de Estudiantes de la Escuela Politécnica Superior de la Universidad de Alicante.</p>
-<p>Esta API sirve de nutriente para los Bots de Telegram de la DEEPSUA.</p>
+<p>Documentación de la API de la Delegación de Estudiantes de la Escuela Politécnica Superior de la Universidad de Alicante.</p>
+<p>Una API hace referencia a los procesos, funciones y métodos que brinda una biblioteca de programación a modo de capa de abstracción para que sea empleada por otro programa informático. En nuestro caso, esos otros programas informáticos son los bots de Telegram que se encargan de gestionar los Grados o la Delegación de Estudiantes.</p>
+<p>A lo largo de esta página se pueden encontrar los distintos endpoints que ofrece la API, así como su breve descripción y los parámetros que requiere cada uno de ellos. Por otra parte, la documentación de la API se puede encontrar <a href="api/">aquí</a>.</p>
+<h3 id="arbol-de-la-web">Árbol de la web<a class="headerlink" href="#arbol-de-la-web" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./">Inicio</a></li>
+<li><a href="api/">Documentación</a></li>
+<li><a href="utils/">Utils</a></li>
+</ul>
 <h3 id="endpoints">Endpoints<a class="headerlink" href="#endpoints" title="Permanent link">&para;</a></h3>
 <p>Los endpoints de la API son los siguientes: </p>
 <table>
@@ -426,7 +447,7 @@
 </tbody>
 </table>
 <h3 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h3>
-<p>Para que la API funcione con Docker tendremos que compilar el contenedor de la siguiente manera:</p>
+<p>La API se puede ejecutar en un contenedor de Docker. Para ello, debemos de seguir los siguientes pasos:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">docker</span> <span class="n">build</span> <span class="p">.</span> <span class="p">-</span><span class="o">-file</span> <span class="n">Dockerfile</span> <span class="n">-t</span> <span class="n">api_deepsua</span>
 </code></pre></div>
 <p>Ahora bien, para ejecutarlo, haremos lo siguiente:</p>
